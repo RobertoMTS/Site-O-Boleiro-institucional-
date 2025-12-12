@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belle Époque - Confeitaria Gourmet Premium</title>
+    <title>O Boleiro</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -163,14 +163,16 @@
 
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 nav-blur border-b border-white/20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
-                <div class="flex items-center space-x-3">
+                <div class="flex items-center space-x-2">
                     <div class="relative">
                         <div
-                            class="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-xl flex items-center justify-center shadow-lg">
-                            <i class="fas fa-crown text-white text-lg"></i>
+                            class="w-10 h-10 bg-gradient-to-br from-amber-300 to-amber-600 rounded-xl flex items-center justify-center shadow-lg">
+                            <img class="items-center rounded-2xl" src="./imagens/Captura de tela 2025-10-10 134412.png"
+                                alt="logo">
+
                         </div>
                         <div
                             class="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-br from-orange-400 to-red-500 rounded-full">
@@ -193,10 +195,13 @@
                         class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Galeria</a>
                     <a href="#contato"
                         class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Contato</a>
-                    <button
-                        class="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-6 py-3 rounded-full font-semibold hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg hover:shadow-xl">
-                        <i class="fas fa-phone mr-2"></i>Encomendar
-                    </button>
+
+                    <a href="https://eadelivery.com.br/estabelecimento/oboleirobolos" target="_blank">
+                        <button
+                            class="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-6 py-3 rounded-full font-semibold hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg hover:shadow-xl">
+                            <i class="fas fa-phone mr-2"></i>Encomendar
+                        </button>
+                    </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -210,10 +215,10 @@
         <div id="mobileMenu"
             class="mobile-menu-slide fixed top-0 right-0 w-80 h-full bg-white shadow-2xl lg:hidden z-40">
             <div class="p-6">
-                <div class="flex justify-between items-center mb-8">
+                <div class="flex justify-between items-center mb-6">
                     <h2 class="font-playfair text-2xl font-bold text-gray-900">Menu</h2>
                     <button onclick="toggleMobileMenu()" class="p-2">
-                        <i class="fas fa-times text-xl text-gray-700"></i>
+                        <i class="fas fa-times text-xl text-gray-20"></i>
                     </button>
                 </div>
                 <nav class="space-y-6">
@@ -240,8 +245,8 @@
     <!-- Hero Section -->
     <section id="inicio" class="min-h-screen flex items-center justify-center relative overflow-hidden hero-pattern">
         <!-- Floating Elements -->
-        <div class="absolute top-23 left-auto opacity-20">
-            <i class="fas fa-birthday-cake text-6x1 text-amber-900">
+        <div class="absolute top-6 left-auto opacity-20">
+            <i class="fas fa-birthday-cake text-6x1 text-amber-">
                 <img src="./imagens/arranjo-de-torta-de-abobora.jpg" alt="">
             </i>
         </div>
@@ -252,9 +257,9 @@
             <i class="fas fa-candy-cane text-4xl text-amber-500"></i>
         </div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="pr-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1
-                class="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold text-gray-900 mb-6 slide-in-right text-shadow">
+                class="font-playfair text-5xl md:text-4xl lg:text-8xl font-bold text-gray-900 mb-6 slide-in-right text-shadow pt-20">
                 Bolos que<br>
                 <span class="gradient-text">Inspiram</span>
             </h1>
@@ -267,15 +272,19 @@
             <div class="flex flex-col sm:flex-row gap-6 justify-center items-center fade-in-up">
                 <button
                     class="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-10 py-4 rounded-full font-semibold text-lg hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg hover:shadow-xl hover:scale-105 z-20">
-                    <i class="fas fa-utensils mr-3">
+                    <a href="https://eadelivery.com.br/estabelecimento/oboleirobolos">
+                        <i class="fas fa-utensils mr-3">
+                        </i>Explorar Sabores
+                    </a>
 
-                    </i>Explorar Sabores
                 </button>
 
-                <button
-                    class="glass-effect text-gray-700 px-10 py-4 rounded-full font-semibold text-lg hover:bg-white/20 transition-all">
-                    <i class="fas fa-play mr-3"></i>Ver Vídeo
-                </button>
+                <a target="_blank" href="https://www.youtube.com/watch?v=tE3qAdTYJGY">
+                    <button
+                        class="glass-effect text-gray-700 px-10 py-4 rounded-full font-semibold text-lg hover:bg-white/20 transition-all">
+                        <i class="fas fa-play mr-3"></i>Ver Vídeo
+                    </button>
+                </a>
             </div>
 
             <!-- Stats -->
@@ -321,9 +330,6 @@
                             para a venda de bolos caseiros, contribuindo para o sustento da família em meio a
                             dificuldades financeiras. Com dedicação, os avós de Samuel Lima transformaram um pequeno
                             sonho em uma empreitada muito maior do que imaginavam.
-
-                            Le Cordon Bleu Paris, a Belle Époque representa a união perfeita entre técnicas
-                            francesas tradicionais e a criatividade brasileira.
                         </p>
                     </div>
 
@@ -382,7 +388,7 @@
                 </div>
 
                 <!-- Image Grid -->
-                <div class="grid grid-cols-2 gap-4">
+                <div class="grid grid-cols-2">
                     <div class="space-y-4">
                         <div
                             class="bg-gradient-to-br from-amber-200 to-amber-300 rounded-2xl h-30 flex items-center justify-center hover-lift">
@@ -429,14 +435,14 @@
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 pt-20">
                 <!-- Product 1 -->
                 <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover-lift card-hover">
                     <div
                         class="h-64 bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center relative">
                         <div class="absolute inset-0 bg-black/10"></div>
                         <div class="relative text-center text-white">
-                            <i class="fas fa-layer-group text-0xl mb-16">
+                            <i class="fas fa-layer-group text-0xl mb-1">
                                 <img src="/imagens/Não há nada tão bom que não posso melhorar com seu bolo favorito! Bolo de milho fofo 🌽.Fofinho .jpg"
                                     alt="">
                             </i>
@@ -446,13 +452,18 @@
                             <span class="text-white text-sm font-semibold">Premium</span>
                         </div>
                     </div>
-                    <div class="p-8">
-                        <h3 class="text-center text-shadow font-playfair text-2xl font-bold text-gray-900 mb-2 py-2">
-                            Tortas Gourmet</h3>
-                        <p class="text-gray-600 mb-6 leading-relaxed">
-                            Tortas elaboradas com chocolate belga, frutas orgânicas e cremes especiais.
-                            Cada fatia é uma experiência única de sabores refinados.
+                    <div class="p-8 pt-20">
+                        <h3
+                            class="text-center text-shadow font-playfair text-2xl pt-15 font-bold text-gray-900 mb-2 py-2">
+                            Bolo Fofo</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed items-center">
+                            Sabe aquele cheirinho de bolo quentinho saindo do forno?
+                            Esse é o nosso Bolo Fofo Tradicional!
+                            Simples, leve e feito com amor, do jeitinho que a vovó fazia!
                         </p>
+
+
+
                         <div class="flex items-center justify-between mb-6">
                             <div class="flex items-center space-x-1 text-amber-500">
                                 <i class="fas fa-star"></i>
@@ -464,10 +475,14 @@
                             </div>
                             <span class="text-2xl font-bold gradient-text">R$ 89</span>
                         </div>
-                        <button
-                            class="w-full bg-gradient-to-r from-amber-500 to-amber-600 text-white py-3 rounded-full font-semibold hover:from-amber-600 hover:to-amber-700 transition-all">
-                            <i class="fas fa-shopping-cart mr-2"></i>Encomendar
-                        </button>
+
+
+                        <a target="_blank" href="https://eadelivery.com.br/estabelecimento/oboleirobolos ">
+                            <button
+                                class="w-full bg-gradient-to-r from-amber-500 to-amber-600 text-white py-3 rounded-full font-semibold hover:from-amber-600 hover:to-amber-700 transition-all">
+                                <i class="fas fa-shopping-cart mr-2"></i>Encomendar
+                            </button>
+                        </a>
                     </div>
                 </div>
 
@@ -477,19 +492,25 @@
                         class="h-64 bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center relative">
                         <div class="absolute inset-0 bg-black/10"></div>
                         <div class="relative text-center text-white">
-                            <i class="fas fa-circle text-6xl mb-4"></i>
-                            <p class="text-xl font-semibold">Macarons Franceses</p>
+                            <i class="fas fa-circle text-1xl mb-4">
+                                <img src="./imagens/bolo3.png" alt="">
+                            </i>
+
                         </div>
-                        <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1">
+                        <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full">
                             <span class="text-white text-sm font-semibold">Exclusivo</span>
                         </div>
                     </div>
-                    <div class="p-8">
-                        <h3 class="font-playfair text-2xl font-bold text-gray-900 mb-4">Macarons Artesanais</h3>
+                    <div class="p-8 pt-20">
+                        <h3 class="font-playfair text-2xl font-bold text-gray-900 mb-1">Bolo Fofo de Goiaba</h3>
                         <p class="text-gray-600 mb-6 leading-relaxed">
-                            Delicados macarons com sabores únicos: lavanda, rosa, pistache e chocolate ruby.
-                            Técnica francesa tradicional em cada mordida.
+                            é sucesso garantido em qualquer mesa. 😍
+                            Fofo por dentro, apaixonante por fora. ❤️
+                            📲Garanta o seu agora mesmo e experimente essa delícia!
                         </p>
+
+
+
                         <div class="flex items-center justify-between mb-6">
                             <div class="flex items-center space-x-1 text-amber-500">
                                 <i class="fas fa-star"></i>
@@ -501,10 +522,12 @@
                             </div>
                             <span class="text-2xl font-bold gradient-text">R$ 15</span>
                         </div>
-                        <button
-                            class="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-3 rounded-full font-semibold hover:from-orange-600 hover:to-orange-700 transition-all">
-                            <i class="fas fa-shopping-cart mr-2"></i>Encomendar
-                        </button>
+                        <a targe="_blank" href="https://eadelivery.com.br/estabelecimento/oboleirobolos ">
+                            <button
+                                class="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-3 rounded-full font-semibold hover:from-orange-600 hover:to-orange-700 transition-all">
+                                <i class="fas fa-shopping-cart mr-2"></i>Encomendar
+                            </button>
+                        </a>
                     </div>
                 </div>
 
@@ -514,19 +537,25 @@
                         class="h-64 bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center relative">
                         <div class="absolute inset-0 bg-black/10"></div>
                         <div class="relative text-center text-white">
-                            <i class="fas fa-wedding-cake text-6xl mb-4"></i>
-                            <p class="text-xl font-semibold">Bolos Especiais</p>
+                            <i class="fas fa-wedding-cake text-6xl mb-1">
+                                <img src="./imagens/pudim cremoso .png" alt="pudim">
+                            </i>
+
                         </div>
-                        <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1">
-                            <span class="text-white text-sm font-semibold">Personalizado</span>
+                        <div class="absolute top-4 right-4 bg-ma-300 backdrop-blur-sm rounded-full px-3 py-1">
+                            <span class="text-white text-sm font-semibold">Novidade</span>
                         </div>
                     </div>
-                    <div class="p-8">
-                        <h3 class="font-playfair text-2xl font-bold text-gray-900 mb-4">Bolos de Evento</h3>
+                    <div class="p-8 pt-20">
+                        <h3 class="font-playfair text-2xl font-bold text-gray-900 mb-4 items-center">Pudim cremoso</h3>
                         <p class="text-gray-600 mb-6 leading-relaxed">
-                            Bolos personalizados para casamentos e celebrações especiais.
-                            Design exclusivo e sabores sofisticados para momentos únicos.
+                            Dois clássicos, um só pedaço! ⭐️
+                            Imagina um bolo fofinho, Agora para de imaginar e vem provar! 🤤
+                            🚚 Entrega quentinha direto pra sua casa.
                         </p>
+
+
+
                         <div class="flex items-center justify-between mb-6">
                             <div class="flex items-center space-x-1 text-amber-500">
                                 <i class="fas fa-star"></i>
@@ -538,19 +567,23 @@
                             </div>
                             <span class="text-2xl font-bold gradient-text">Consulte</span>
                         </div>
-                        <button
-                            class="w-full bg-gradient-to-r from-red-500 to-red-600 text-white py-3 rounded-full font-semibold hover:from-red-600 hover:to-red-700 transition-all">
-                            <i class="fas fa-phone mr-2"></i>Consultar
-                        </button>
+                        <a target="_blank" href="https://www.whatsapp.com/catalog/558594002682/?app_absent0">
+                            <button
+                                class="w-full bg-gradient-to-r from-red-500 to-red-600 text-white py-3 rounded-full font-semibold hover:from-red-600 hover:to-red-700 transition-all">
+                                <i class="fas fa-phone mr-2"></i>Consultar
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <div class="text-center mt-12">
-                <button
+               <a tar href="https://eadelivery.com.br/estabelecimento/oboleirobolos">
+                 <button
                     class="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-10 py-4 rounded-full font-semibold text-lg hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg hover:shadow-xl">
                     <i class="fas fa-th-large mr-3"></i>Ver Todos os Produtos
                 </button>
+               </a>
             </div>
         </div>
     </section>
@@ -660,8 +693,8 @@
                             A
                         </div>
                         <div class="ml-4">
-                            <h4 class="font-playfair text-xl font-bold text-gray-900">Ana Silva</h4>
-                            <p class="text-gray-600">Empresária</p>
+                            <h4 class="font-playfair text-xl font-bold text-gray-900">Marilia lopes</h4>
+                            <p class="text-gray-600">Cliente</p>
                             <div class="flex text-amber-500 mt-1">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -672,8 +705,7 @@
                         </div>
                     </div>
                     <p class="text-gray-700 italic leading-relaxed">
-                        "O bolo do meu casamento foi uma obra de arte! Cada detalhe superou minhas expectativas.
-                        A Belle Époque transformou nosso sonho em realidade."
+                        "Boa opções de lanches, tortas, salgados, preço acessível."
                     </p>
                 </div>
 
@@ -684,8 +716,8 @@
                             M
                         </div>
                         <div class="ml-4">
-                            <h4 class="font-playfair text-xl font-bold text-gray-900">Marco Santos</h4>
-                            <p class="text-gray-600">Chef Executivo</p>
+                            <h4 class="font-playfair text-xl font-bold text-gray-900">Adryan Gomes</h4>
+                            <p class="text-gray-600">Cliente</p>
                             <div class="flex text-amber-500 mt-1">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -696,8 +728,8 @@
                         </div>
                     </div>
                     <p class="text-gray-700 italic leading-relaxed">
-                        "Como chef, reconheço a qualidade excepcional. Os macarons são perfeitos,
-                        com texturas e sabores que rivalizam com os melhores de Paris."
+                        "Particulamente eu amo o bolo mole especial deles, até hoje foi o melhor que ja experimentei,
+                        Parabéns pelos bolos maravilhosos vendidos e os salgadinhos também, são uma delicia."
                     </p>
                 </div>
 
@@ -708,8 +740,8 @@
                             L
                         </div>
                         <div class="ml-4">
-                            <h4 class="font-playfair text-xl font-bold text-gray-900">Lucia Ferreira</h4>
-                            <p class="text-gray-600">Event Planner</p>
+                            <h4 class="font-playfair text-xl font-bold text-gray-900">Renato Brito</h4>
+                            <p class="text-gray-600">Cliente</p>
                             <div class="flex text-amber-500 mt-1">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -720,8 +752,8 @@
                         </div>
                     </div>
                     <p class="text-gray-700 italic leading-relaxed">
-                        "Parceria de anos! A Belle Époque sempre entrega excelência.
-                        Meus clientes ficam encantados com a qualidade e apresentação."
+                        "Bolos, salgados e tortas, tudo maravilhoso, saudades das refeições, um prato mas gostoso que o
+                        outro."
                     </p>
                 </div>
             </div>
@@ -729,147 +761,94 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contato" class="py-24 bg-gray-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-16">
+    <section id="contato" class="py-3 bg-gray-900 text-white">
+        <div class="items-center text-center">
+            <div class="font-bold">
                 <!-- Contact Info -->
                 <div>
-                    <div class="inline-flex items-center bg-amber-500/20 rounded-full px-4 py-2 mb-6">
+                    <div class="inline-flex items-center bg-amber-500/20 rounded-full px-2 py-1 mb-2">
                         <i class="fas fa-phone text-amber-400 mr-2"></i>
-                        <span class="text-sm font-semibold text-amber-300">Entre em Contato</span>
+                        <span class="text-sm font-semibold text-amber-50 font-medium">Entre em Contato</span>
                     </div>
 
-                    <h2 class="font-playfair text-4xl md:text-5xl font-bold mb-6">
+                    <h2 class="font-playfair text-4xl text-center  font-bold mb-6">
                         Vamos Criar Algo <span class="gradient-text">Especial</span>
                     </h2>
 
-                    <p class="text-xl text-gray-300 mb-12 leading-relaxed">
+                    <p class="text-gray-300 text-center mb-9 leading-relaxed">
                         Estamos prontos para transformar seus momentos especiais em experiências inesquecíveis
                     </p>
 
-                    <div class="space-y-8">
-                        <div class="flex items-start space-x-4">
+                    <div class="md:place-items-center gap-4" >
+                        <div class="md:place-items-center">
                             <div
-                                class="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                class=" w-10 h-10 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center">
                                 <i class="fas fa-map-marker-alt text-white"></i>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-white mb-2">Localização</h3>
-                                <p class="text-gray-300">Rua Augusta, 1234<br>Consolação - São Paulo/SP<br>CEP:
-                                    01305-100</p>
+                                <h3 class=" font-semibold items-center text-white">Localização</h3>
+                                <p class=" text-center text-gray-300">Rua Nossa Senhora das Graças,
+                                    756<br>Fortaleza-Ceará<br>CEP:
+                                    60310770</p>
                             </div>
                         </div>
 
-                        <div class="flex items-start space-x-4">
+                        <div class="md:place-items-center">
                             <div
-                                class="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                class="w-10 h-10 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center">
                                 <i class="fas fa-phone text-white"></i>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-white mb-2">Telefones</h3>
-                                <p class="text-gray-300">(11) 3456-7890<br>(11) 99876-5432</p>
+                                <h3 class="font-semibold text-white">Telefones</h3>
+                                <p class="text-gray-300"> (85) 9400-2682
+
+                                </p>
                             </div>
                         </div>
 
-                        <div class="flex items-start space-x-4">
+                        <div class="md:place-items-center">
                             <div
-                                class="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                class="w-10 h-10 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center">
                                 <i class="fas fa-envelope text-white"></i>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-white mb-2">E-mail</h3>
-                                <p class="text-gray-300">contato@belleepoque.com.br<br>pedidos@belleepoque.com.br</p>
+                                <h3 class="font-semibold text-white">E-mail</h3>
+                                <p class="text-gray-300">contato@belleepoque.com.
                             </div>
                         </div>
 
-                        <div class="flex items-start space-x-4">
+                        <div class=" md:place-items-center">
                             <div
-                                class="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                class="w-10 h-10 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
                                 <i class="fas fa-clock text-white"></i>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-white mb-2">Funcionamento</h3>
-                                <p class="text-gray-300">Segunda a Sexta: 9h às 19h<br>Sábado: 9h às 17h<br>Domingo: 10h
-                                    às 15h</p>
+                                <h3 class="font-semibold text-white">Funcionamento</h3>
+                                <p class="text-center text-gray-300">Segunda a Sábado: 8h às 19h<br>
+                                <p>Domingo: 8h ás 17h.</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Social Media -->
-                    <div class="mt-12">
+                    <div class="items-center">
                         <h3 class="font-semibold text-white mb-4">Siga-nos</h3>
-                        <div class="flex space-x-4">
-                            <a href="#"
+                        <div class="text-center inline-flex space-x-3">
+                            <a target="_blank" href="https://www.instagram.com/oboleirooficial/"
                                 class="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
                                 <i class="fab fa-instagram text-white"></i>
                             </a>
-                            <a href="#"
-                                class="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                            <a target="_blank" href="https://www.facebook.com/oboleirobolos/?locale=pt_BR"
+                                class="text-center w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
                                 <i class="fab fa-facebook-f text-white"></i>
                             </a>
-                            <a href="#"
+                            <a target="_blank " href="https://www.whatsapp.com/catalog/558594002682/?app_absent=0"
                                 class="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
                                 <i class="fab fa-whatsapp text-white"></i>
                             </a>
-                            <a href="#"
-                                class="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
-                                <i class="fab fa-youtube text-white"></i>
-                            </a>
+
                         </div>
                     </div>
-                </div>
-
-                <!-- Contact Form -->
-                <div class="formContato bg-white/10 backdrop-blur-lg rounded-3xl p-8">
-                    <h3 class="font-playfair text-2xl font-bold text-white mb-8">Faça seu Orçamento</h3>
-
-                    <form class="space-y-6">
-                        <div class="grid sm:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-sm font-medium text-gray-300 mb-2">Nome</label>
-                                <input type="text"
-                                    class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500"
-                                    placeholder="Seu nome">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-300 mb-2">Telefone</label>
-                                <input type="tel"
-                                    class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500"
-                                    placeholder="(11) 99999-9999">
-                            </div>
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-gray-300 mb-2">E-mail</label>
-                            <input type="email"
-                                class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500"
-                                placeholder="seu@email.com">
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-gray-300 mb-2">Tipo de Evento</label>
-                            <select
-                                class="w-full px-4 py-3 bg-bla/10 border border-white/20 rounded-lg text- focus:outline-none focus:ring-2 focus:ring-amber-500">
-                                <option value="">Selecione o tipo</option>
-                                <option value="casamento">Casamento</option>
-                                <option value="aniversario">Aniversário</option>
-                                <option value="corporativo">Evento Corporativo</option>
-                                <option value="outros">Outros</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-gray-300 mb-2">Mensagem</label>
-                            <textarea rows="4"
-                                class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500"
-                                placeholder="Conte-nos sobre seu evento especial..."></textarea>
-                        </div>
-
-                        <button type="submit"
-                            class="w-full bg-gradient-to-r from-amber-500 to-amber-600 text-white py-4 rounded-full font-semibold text-lg hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg hover:shadow-xl">
-                            <i class="fas fa-paper-plane mr-2"></i>Enviar Solicitação
-                        </button>
-                    </form>
                 </div>
             </div>
         </div>
@@ -881,102 +860,23 @@
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="flex items-center space-x-3 mb-4 md:mb-0">
                     <div
-                        class="w-10 h-10 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center">
-                        <i class="fas fa-crown text-white"></i>
+                        class="w-11 h-11 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl flex items-center justify-center shadow-lg">
+                            <img class="items-center rounded-2xl" src="./imagens/Captura de tela 2025-10-10 134412.png"
+                                alt="logo">
                     </div>
                     <div>
-                        <h3 class="font-playfair text-xl font-bold">Belle Époque</h3>
-                        <p class="text-xs text-amber-400">CONFEITARIA GOURMET</p>
+                        <h3 class="font-playfair text-xl font-bold">O Boleiro</h3>
+                        <p class="text-xs text-amber-400">Confeitaria</p>
                     </div>
                 </div>
 
                 <div class="text-center md:text-right">
-                    <p class="text-gray-400 mb-2">&copy; 2024 Belle Époque Confeitaria Gourmet</p>
+                    <p class="text-gray-400 mb-1">&copy; 2025 O Boleiro Confeitaria</p>
                     <p class="text-gray-500 text-sm">Todos os direitos reservados</p>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script>
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('active');
-        }
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function (e) {
-            const menu = document.getElementById('mobileMenu');
-            const menuButton = document.querySelector('[onclick="toggleMobileMenu()"]');
-
-            if (menu && !menu.contains(e.target) && menuButton && !menuButton.contains(e.target)) {
-                menu.classList.remove('active');
-            }
-        });
-
-        // Navbar scroll effect
-        window.addEventListener('scroll', function () {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('shadow-lg');
-            } else {
-                nav.classList.remove('shadow-lg');
-            }
-        });
-
-        // Form submission
-        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
-    (function () {
-    emailjs.init("service_w0v6t6h"); // fornecido pelo site
-    })();
-
-    document.querySelector('#formContato').addEventListener('submit', function (e) {
-    e.preventDefault();
-    emailjs.sendForm('service_w0v6t6h', '
-    email_po4SQVlOlqD0G85If5M3lUXu', this)
-    .then(() => {
-    alert('Email enviado com sucesso!');
-    }, (error) => {
-    alert('Erro ao enviar: ' + JSON.stringify(error));
-    });
-    });
-
-    // Intersection Observer for animations
-    const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver(function (entries) {
-    entries.forEach(entry => {
-    if (entry.isIntersecting) {
-    entry.target.style.opacity = '1';
-    entry.target.style.transform = 'translateY(0)';
-    }
-    });
-    }, observerOptions);
-
-    // Observe elements for animation
-    document.querySelectorAll('.hover-lift, .card-hover').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    el.style.transition = 'all 0.6s ease';
-    observer.observe(el);
-    });
+</body>
 
 <head>
